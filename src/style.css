@@ -33,30 +33,31 @@ body{
   height: 100%;
   text-align: center;
   line-height: 60px;
-  display: flex;
-  flex-direction: column;
-  width: 10%;
-  cursor: pointer; 
+  cursor: pointer;
+  padding: 0 15px;
+  text-decoration: none;
+  color: inherit 
 }
 .header .mosh:hover{
   background-color: rgb(54, 160, 142);
 }
 .header .mosh:hover .sub-mosh {
-  z-index: 1;
-  transform: translateY(0);
+  overflow: visible;
+  height: fit-content;
 }
 .header .mosh .sub-mosh {
   position: absolute;
   list-style: none;
-  width: 100%;
   text-align: right;
   background-color: rgb(66, 133, 125);
   cursor: pointer;
-  z-index: -1000;
-  transform: translateY(-400%);
-  transition: transform .2s ease-in-out .2s;
-  width: 200%;
+  z-index: 1;
+  transition: all .3s ease;
+  width: 200px;
   right:0;
+  top: 100%;
+  overflow: hidden;
+  height: 0;
 }
 .header .mosh .sub-mosh li {
   line-height: normal;
