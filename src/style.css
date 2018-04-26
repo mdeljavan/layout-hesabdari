@@ -42,8 +42,9 @@ body{
   background-color: rgb(54, 160, 142);
 }
 .header .mosh:hover .sub-mosh {
-  overflow: visible;
-  height: fit-content;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0)
 }
 .header .mosh .sub-mosh {
   position: absolute;
@@ -56,8 +57,10 @@ body{
   width: 200px;
   right:0;
   top: 100%;
-  overflow: hidden;
-  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-15px)
+
 }
 .header .mosh .sub-mosh li {
   line-height: normal;
