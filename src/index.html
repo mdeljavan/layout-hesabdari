@@ -8,44 +8,47 @@
     <link rel="stylesheet" href="style.css">
     <title>حسابداری</title>
 </head>
-
 <body>
     <div class="header">
         <div class="container">
-            <div class="navbar">
-                <a class="mosh" href="#">
-                    مشتریان
-                    <ul class="sub-mosh">
-                        <li>
-                            ثبت مشتری جدید
-                        </li>
-                        <li>
-                            مشاهده مشتریان
-                        </li>
-                    </ul>
-                </a>
-                <a class="mosh" href="#">
-                    مدیریت چک
-                    <ul class="sub-mosh">
-                        <li>
-                            ثبت مشتری جدید
-                        </li>
-                        <li>
-                            مشاهده مشتریان
-                        </li>
-                    </ul>
-                </a>
+            <div class="main-navbar">
+                <ul class="main-navbar__items">
+                    <li class="main-navbar__item">
+                        <a href="#">
+                            مشتریان
+                            <ul class="main-navbar__sub-menu__items">
+                                <li class="main-navbar__sub-menu__item">
+                                    <a href="#">ثبت مشتری جدید</a>
+                                </li>
+                                <li class="main-navbar__sub-menu__item">
+                                    <a href="#">ثبت مشتری جدید</a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="main-navbar__item">
+                        <a href="#">
+                            مدیریت چک
+                            <ul class="main-navbar__sub-menu__items">
+                                <li class="main-navbar__sub-menu__item">
+                                    <a href="#">ثبت مشتری جدید</a>
+                                </li>
+                                <li class="main-navbar__sub-menu__item">
+                                    <a href="#">مشاهده مشتریان</a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
             </div>
-
-
         </div>
     </div>
-    <div class="container">
-        <div class="box-check">
-            <span class="title-check">
+    <main class="container">
+        <section id="box-check" class="box-check">
+            <span class="box-check__title">
                 چکهای 10 روز آینده
             </span>
-            <ul class="header-detail-check">
+            <ul class="box-check__table">
                 <li>تاریخ وصول</li>
                 <li>گیرنده</li>
                 <li>مبلغ</li>
@@ -53,9 +56,8 @@
                 <li>شماره چک</li>
                 <li>تاریخ صدور</li>
             </ul>
-        </div>
-    </div>
-
+        </section>
+    </main>
 </body>
 
 </html>
